@@ -12,8 +12,8 @@
 
 .icon-img {
   filter: brightness(0) saturate(100%) invert(56%) sepia(64%) saturate(523%) hue-rotate(81deg) brightness(92%) contrast(88%);
-  height: 20px; /* Adjusted height */
-  width: 20px; /* Adjusted width */
+  height: 20px; 
+  width: 20px; 
 }
 
 .top-bar-item {
