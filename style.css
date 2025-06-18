@@ -1,6 +1,6 @@
 /* Top bar */
 .top-bar {
-  background-color: #339933;
+  background-color: #0c1a2b; /* dark navy as per screenshot */
   color: white;
   display: flex;
   justify-content: flex-end;
@@ -10,6 +10,12 @@
   font-family: Arial, sans-serif;
 }
 
+.icon-img {
+  filter: brightness(0) saturate(100%) invert(56%) sepia(64%) saturate(523%) hue-rotate(81deg) brightness(92%) contrast(88%);
+  height: 20px; /* Adjusted height */
+  width: 20px; /* Adjusted width */
+}
+
 .top-bar-item {
   display: flex;
   align-items: center;
@@ -17,7 +23,7 @@
 }
 
 .top-bar .icon {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 
 /* Navbar */
