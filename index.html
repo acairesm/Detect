@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site com Navbar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <div class="logo-main">DETECT</div>
+      <div class="logo-subtitle">Saúde Ambiental</div>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul id="navbar-links">
+      <li><a href="#">RECIFE</a></li>
+      <li><a href="#">FORTALEZA</a></li>
+      <li><a href="#">CONTATO</a></li>
+      <li><a href="#">CURITIBA</a></li>
+      <li><a href="#">FLORIANÓPOLIS</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navbarLinks = document.getElementById('navbar-links');
+
+    menuToggle.addEventListener('click', () => {
+      navbarLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
