@@ -1,30 +1,34 @@
-/* Top bar */
 .top-bar {
-  background-color: #0c1a2b; /* dark navy as per screenshot */
+  background-color: #339933	;
   color: white;
   display: flex;
-  justify-content: flex-end;
-  gap: 2rem;
-  padding: 0.5rem 2rem;
-  font-size: 0.9rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 5%; /* Aumentei as margens laterais com porcentagem */
+  font-size: 1.2rem;
   font-family: Arial, sans-serif;
+  flex-wrap: wrap;
+}
+
+.top-bar-left,
+.top-bar-right {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 }
 
 .icon-img {
-  filter: brightness(0) saturate(100%) invert(56%) sepia(64%) saturate(523%) hue-rotate(81deg) brightness(92%) contrast(88%);
-  height: 20px; 
-  width: 20px; 
+  height: 20px;
+  width: 20px;
+filter: brightness(0) saturate(100%) invert(100%);
 }
 
 .top-bar-item {
   display: flex;
   align-items: center;
-  gap: 0.3rem;
+  gap: 0.5rem; 
 }
 
-.top-bar .icon {
-  font-size: 0.9rem;
-}
 
 /* Navbar */
 .navbar {
@@ -33,23 +37,40 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.2rem 2rem;
   font-family: Arial, sans-serif;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+.navbar-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.divider {
+  height: 20px;
+  width: 1px;
+  background-color: #ccc; /* Ou branco: #ffffff para fundo escuro */
+  margin: 0 1rem;
+  opacity: 0.6;
+}
+
+
 .logo-image {
-  height: 50px;
-  width: auto;
+  height: 120px;
+  width: 120px;
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
   gap: 2rem;
-  text-transform: none;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 0;
   padding: 0;
 }
@@ -62,16 +83,17 @@
 
 .navbar ul li a:hover,
 .navbar ul li a.active {
-  color: #2ecc71;
+  color: #A6D785    	;
 }
 
 .btn-cta {
   background-color: #2ecc71;
   color: white;
-  padding: 0.6rem 1.5rem;
+  padding: 0.5rem 1.2rem;
   border-radius: 25px;
   text-decoration: none;
   font-weight: 600;
+  font-size: 0.9rem;
   transition: background-color 0.3s ease;
 }
 
