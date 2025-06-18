@@ -1,8 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
 .top-bar {
   background-color: #339933	;
   color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 1.4rem 5%; /* Aumentei as margens laterais com porcentagem */
   font-size: 1.2rem;
@@ -40,6 +47,7 @@ filter: brightness(0) saturate(100%) invert(100%);
   padding: 0.2rem 2rem;
   font-family: Arial, sans-serif;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
 }
 
 .navbar-container {
@@ -83,7 +91,7 @@ filter: brightness(0) saturate(100%) invert(100%);
 
 .navbar ul li a:hover,
 .navbar ul li a.active {
-  color: #A6D785    	;
+  color: #A6D785;
 }
 
 .btn-cta {
