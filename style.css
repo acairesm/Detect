@@ -178,15 +178,106 @@ filter: brightness(0) saturate(100%) invert(100%);
 
 .inicio-image {
   display: block;
-  width: 100vw; /* largura da tela */
-  height: 70vh; /* altura da tela inteira */
-  object-fit: cover; /* garante que a imagem preencha proporcionalmente */
+  width: 100vw;
+  height: 70vh;
+  object-fit: cover;
   margin: 0;
   padding: 0;
-  box-shadow: inset 0 -50px 80px rgba(0, 0, 0, 0.5); /* sombreamento suave */
-  border-radius: 0; /* remove bordas arredondadas para efeito fullscreen */
+  box-shadow: inset 0 -70px 100px rgba(0, 0, 0, 0.8); /* sombra mais forte e mais densa */
+  border-radius: 0;
   z-index: 0;
-    margin-top: 5px; /* ajuste conforme a altura da sua navbar */
-
+  margin-top: 5px;
 }
 
+
+
+.inicio-container {
+  position: relative;
+  width: 100vw;
+  height: 70vh;
+  margin-top: 5px;
+}
+
+.inicio-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.4); /* deixa a imagem mais escura */
+  border-radius: 0;
+  display: block;
+}
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  /* opcional, pode ajustar a cor/escurecimento se quiser */
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+.texto-sobreposto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+  font-family: Arial, sans-serif;
+  padding: 0 1rem;
+}
+
+.texto-sobreposto h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.texto-sobreposto p {
+  font-size: 2rem; /* maior subtítulo */
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+/* botão sobreposto igual btn-cta */
+.texto-sobreposto .btn-cta {
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 30px 10px 30px 10px;
+  background-color: #2ecc71;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  transition: color 0.3s ease-in-out;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.texto-sobreposto .btn-cta::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #27ae60;
+  z-index: -1;
+  transition: width 0.4s ease-in-out;
+}
+
+.texto-sobreposto .btn-cta:hover::before {
+  width: 100%;
+}
+
+.texto-sobreposto .btn-cta:hover {
+  color: #eafaf1;
+}
