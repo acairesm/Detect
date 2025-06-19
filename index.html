@@ -1,77 +1,324 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Site com Navbar</title>
+  <title>Detect - Dedetização e Limpeza Profissional</title>
+  <meta name="description" content="Dedetização profissional em São Paulo. Limpeza de caixas d'água, controle de pragas e desentupimento." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Top Bar -->
   <div class="top-bar">
-  <!-- Localização à esquerda -->
-  <div class="top-bar-left">
-    <div class="top-bar-item">
-      <img src="img/local.png" alt="Localização" class="icon-img" /> São Paulo - SP
+    <div class="top-bar-content">
+      <div class="top-bar-left">
+        <div class="top-bar-item">
+          <span class="icon">📍</span>
+          São Paulo - SP
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <div class="top-bar-item">
+          <span class="divider"></span>
+          <span class="icon">📞</span>
+          <a href="tel:+551150733337">(11) 5073-3337</a>
+        </div>
+        <div class="top-bar-item">
+          <span class="divider"></span>
+          <span class="icon">✉️</span>
+          <a href="mailto:atendimento@dedetizadoradetect.com.br">atendimento@dedetizadoradetect.com.br</a>
+        </div>
+      </div>
     </div>
   </div>
-aa
-  
-  <!-- Contatos à direita -->
-  <div class="top-bar-right">
-  
-    <div class="top-bar-item">
-        <span class="divider"></span>
-      <img src="img/telefone.png" alt="Telefone" class="icon-img" />  (11) 5073-3337
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="logo">
+        <img src="/placeholder.svg" alt="Logo Detect" class="logo-image" />
+        <span class="logo-text">DETECT</span>
+      </div>
+      <div class="menu-toggle" id="menu-toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="navbar-links" id="navbar-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre Nós</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#cidades">Atendimento</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <a href="https://wa.me/551150733337" target="_blank" class="btn-cta">Orçamento Rápido</a>
     </div>
+  </nav>
 
- 
-
-    <div class="top-bar-item">
-        <span class="divider"></span>
-
-      <img src="img/o-email.png" alt="Email" class="icon-img" />  atendimento@dedetizadoradetect.com.br
+  <!-- Hero Section -->
+  <section id="inicio" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Proteja seu lar com o melhor custo-benefício</h1>
+      <p>Serviço eficaz e rápido para manter sua casa livre de pragas indesejadas</p>
+      <a href="https://wa.me/551150733337" target="_blank" class="btn-cta btn-hero">Faça o orçamento via WhatsApp</a>
     </div>
-  </div>
-</div>
+  </section>
 
-
-<nav class="navbar">
-  <div class="navbar-container">
-    <div class="logo">
-      <img src="img/Logo.jpg" alt="Logo Detect" class="logo-image" />
+  <!-- Sobre Section -->
+  <section id="sobre" class="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>Sobre a Detect</h2>
+          <p>Há mais de uma década, a Detect Dedetização tem sido referência em controle de pragas e limpeza especializada em São Paulo. Nossa missão é proteger sua família e seu patrimônio com soluções eficazes e seguras.</p>
+          <p>Utilizamos apenas produtos aprovados pela ANVISA e contamos com uma equipe de técnicos altamente qualificados e certificados, garantindo resultados duradouros e confiáveis.</p>
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-number">10+</div>
+              <div class="stat-label">Anos de Experiência</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">5000+</div>
+              <div class="stat-label">Clientes Satisfeitos</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">24h</div>
+              <div class="stat-label">Atendimento</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Garantia</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="/placeholder.svg" alt="Equipe Detect" />
+        </div>
+      </div>
     </div>
-    <div class="menu-toggle" id="menu-toggle">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <ul id="navbar-links">
-      <li><a href="#">Início</a></li>
-      <li><a href="#">Sobre Nós</a></li>
-      <li><a href="#">Serviços</a></li>
-      <li><a href="#">Contato</a></li>
-    </ul>
-    
-    <a href="#" class="btn-cta">Orçamento Rápido</a>
-  </div>
-</nav>
+  </section>
 
-<img src="img/fotoinicio.jpg" alt="Imagem Início" class="inicio-image" />
+  <!-- Serviços Section -->
+  <section id="servicos" class="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Nossos Serviços</h2>
+        <p>Oferecemos soluções completas em dedetização e limpeza com tecnologia avançada e produtos de qualidade</p>
+      </div>
+      
+      <div class="services-grid">
+        <!-- Limpeza -->
+        <div class="service-card">
+          <div class="service-icon">🧽</div>
+          <h3>Serviços de Limpeza</h3>
+          <ul>
+            <li>Limpeza de caixas d'água</li>
+            <li>Limpeza de caixas de gordura</li>
+            <li>Limpeza de caixas de esgoto</li>
+            <li>Limpeza de bebedouros</li>
+            <li>Limpeza de fachadas</li>
+          </ul>
+        </div>
+
+        <!-- Desentupimento -->
+        <div class="service-card">
+          <div class="service-icon">🔧</div>
+          <h3>Desentupimento</h3>
+          <ul>
+            <li>Desentupimento de pias</li>
+            <li>Desentupimento de vasos sanitários</li>
+            <li>Desentupimento de ralos</li>
+            <li>Desentupimento de tubulações</li>
+            <li>Atendimento 24 horas</li>
+          </ul>
+        </div>
+
+        <!-- Controle de Pragas -->
+        <div class="service-card">
+          <div class="service-icon">🛡️</div>
+          <h3>Controle de Pragas</h3>
+          <ul>
+            <li>Desinsetização</li>
+            <li>Desratização</li>
+            <li>Atomização</li>
+            <li>Termonebulização</li>
+            <li>Descupinização</li>
+          </ul>
+        </div>
+
+        <!-- Atendimento 24h -->
+        <div class="service-card">
+          <div class="service-icon">⏰</div>
+          <h3>Atendimento 24h</h3>
+          <ul>
+            <li>Emergências não esperam</li>
+            <li>Técnicos disponíveis</li>
+            <li>Atendimento rápido</li>
+            <li>Orçamento gratuito</li>
+            <li>Garantia total</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="benefits">
+        <h3>Por que escolher a Detect?</h3>
+        <div class="benefits-grid">
+          <div class="benefit">✅ Produtos aprovados pela ANVISA</div>
+          <div class="benefit">✅ Técnicos certificados e experientes</div>
+          <div class="benefit">✅ Orçamento gratuito sem compromisso</div>
+          <div class="benefit">✅ Métodos seguros para pets e crianças</div>
+          <div class="benefit">✅ Garantia de qualidade e eficácia</div>
+          <div class="benefit">✅ Atendimento em toda região</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cidades de Atendimento -->
+  <section id="cidades" class="coverage">
+    <div class="container">
+      <div class="section-header">
+        <h2>Cidades de Atendimento</h2>
+        <p>Levamos nossos serviços profissionais até você em toda a Grande São Paulo e região</p>
+      </div>
+      
+      <div class="coverage-grid">
+        <div class="coverage-card">
+          <div class="coverage-icon">🏙️</div>
+          <h3>São Paulo Capital</h3>
+          <p>Atendimento em todos os bairros da capital paulista com equipe especializada disponível 24 horas.</p>
+        </div>
+        
+        <div class="coverage-card">
+          <div class="coverage-icon">🏘️</div>
+          <h3>Grande ABCD</h3>
+          <p>Santo André, São Bernardo do Campo, São Caetano do Sul e Diadema com atendimento completo.</p>
+        </div>
+        
+        <div class="coverage-card">
+          <div class="coverage-icon">🌆</div>
+          <h3>Grande São Paulo</h3>
+          <p>Toda a região metropolitana de São Paulo com serviços especializados em dedetização e limpeza.</p>
+        </div>
+        
+        <div class="coverage-card">
+          <div class="coverage-icon">🏞️</div>
+          <h3>Interior (até 200km)</h3>
+          <p>Atendemos cidades do interior paulista em um raio de até 200km da capital.</p>
+        </div>
+        
+        <div class="coverage-card">
+          <div class="coverage-icon">🏖️</div>
+          <h3>Litoral (até 200km)</h3>
+          <p>Santos, Guarujá, São Vicente e toda a baixada santista até 200km de São Paulo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato Section -->
+  <section id="contato" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Entre em Contato</h2>
+        <p>Solicite seu orçamento gratuito e proteja seu ambiente contra pragas</p>
+      </div>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Fale Conosco</h3>
+          <div class="contact-item">
+            <span class="icon">📞</span>
+            <div>
+              <strong>Telefone</strong>
+              <p><a href="tel:+551150733337">(11) 5073-3337</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="icon">✉️</span>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:atendimento@dedetizadoradetect.com.br">atendimento@dedetizadoradetect.com.br</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="icon">📍</span>
+            <div>
+              <strong>Localização</strong>
+              <p>São Paulo - SP</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="icon">⏰</span>
+            <div>
+              <strong>Atendimento</strong>
+              <p>24 horas por dia, 7 dias por semana</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-cta">
+          <h3>Solicite um Orçamento</h3>
+          <p>Entre em contato conosco pelo WhatsApp e receba um orçamento gratuito e sem compromisso.</p>
+          <a href="https://wa.me/551150733337" target="_blank" class="btn-cta btn-large">
+            📱 Chamar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <img src="/placeholder.svg" alt="Logo Detect" />
+            <span>DETECT</span>
+          </div>
+          <p>Dedetização profissional em São Paulo com mais de 10 anos de experiência. Protegendo famílias e negócios contra pragas indesejadas.</p>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Nossos Serviços</h4>
+          <ul>
+            <li>Limpeza de caixas d'água</li>
+            <li>Controle de pragas</li>
+            <li>Desentupimento</li>
+            <li>Limpeza de fachadas</li>
+            <li>Atendimento 24h</li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Atendimento</h4>
+          <ul>
+            <li>São Paulo Capital</li>
+            <li>Grande ABCD</li>
+            <li>Grande São Paulo</li>
+            <li>Interior (até 200km)</li>
+            <li>Litoral (até 200km)</li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Contato</h4>
+          <p>📞 <a href="tel:+551150733337">(11) 5073-3337</a></p>
+          <p>✉️ <a href="mailto:atendimento@dedetizadoradetect.com.br">atendimento@dedetizadoradetect.com.br</a></p>
+          <p>📍 São Paulo - SP</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 Detect Dedetização. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
-
-<footer style="text-align: center; font-size: 0.8rem; padding: 2rem 1rem;">
-  <p>Ícones feitos por 
-    <a href="https://www.flaticon.com/authors/vector-stall" target="_blank" rel="noopener noreferrer">Vector Stall</a>, 
-    <a href="https://www.flaticon.com/authors/radhe-icon" target="_blank" rel="noopener noreferrer">Radhe Icon</a> e 
-    <a href="https://www.flaticon.com/authors/pixel-perfect" target="_blank" rel="noopener noreferrer">Pixel perfect</a> 
-    de <a href="https://www.flaticon.com/" target="_blank" rel="noopener noreferrer">www.flaticon.com</a>
-    <a href="https://br.freepik.com/fotos-gratis/pessoa-irreconheciv
-    el-com-roupa-de-protecao-quimica-branca-fazendo-a-desinfeccao-de-areas
-    -publicas-para-impedir-a-disseminacao-do-virus-corona-altamente-contagioso_111
-    37291.htm#fromView=keyword&page=1&position=4&uuid=8e784297-4ee3-4458-9c19-ff74c7eb151f&query=Pest+Control">Imagem de aleksandarlittlewolf no Freepik</a>
-  </p>
-</footer>
-
 </body>
 </html>
